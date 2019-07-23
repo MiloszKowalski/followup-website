@@ -1,0 +1,11 @@
+<!--@ include header @-->
+  <!--@ include topmenu @-->
+  <div class="wrapper">
+    <!--@ include see-you-soon @-->
+    <!--@ include grow-up @-->
+      <footer>
+        Copyright FollowUP &copy;2019. Wszystkie prawa zastrzeżone.
+        <!--@ include Svg/followup-logo-svg @-->
+      </footer>
+  </div>
+<!--@ include footer @-->

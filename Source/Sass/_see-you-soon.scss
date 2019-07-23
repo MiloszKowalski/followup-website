@@ -1,0 +1,212 @@
+// ######################
+// #### SEE YOU SOON ####
+// ######################
+
+#see-you-soon {
+  display: flex;
+  flex-direction: column-reverse;
+
+  & svg.see-you-soon {
+    width: 80vw;
+    margin: -3vh auto;
+    height: 35vh;
+  }
+
+  & .text {
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+    top: -30px;
+    
+    & h1 {
+      font-size: 1.8rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  .learn-more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transition: opacity 0.25s;
+
+    & svg, p {
+      position: relative;
+      left: -50%;
+      top: 30px;
+      color: #707070;
+      fill: #707070;
+    }
+
+    &.mouse-hidden {
+      opacity: 0;
+    }
+  }
+}
+
+/////// Mouse SVG and animation
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+}
+
+@keyframes mouse-arrow {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hand {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
+svg#whole-mouse, svg#whole-hand {
+  position: relative;
+  top: -15px;
+  left: -50%;
+
+  & path#arrow-1 {
+    animation: mouse-arrow 1.5s infinite;
+  }
+
+  & path#arrow-2 {
+    animation: mouse-arrow 1.5s 0.2s infinite;
+  }
+
+  & path#arrow-3 {
+    animation: mouse-arrow 1.5s 0.4s infinite;
+  }
+}
+
+svg#whole-mouse {
+  & g#wheel {
+    animation: mouse-scroll 1.5s infinite;
+  }
+}
+
+svg#whole-hand {
+  & * {
+    transform: translateY(30px);
+  }
+  & path#hand {
+    animation: hand 1.5s infinite;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  #see-you-soon {
+    flex-direction: row;
+  
+    & svg.see-you-soon {
+      width: 100vw;
+      margin: -25vh auto;
+      height: 100vh;
+    }
+  
+    & .text {
+      top: 0px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #see-you-soon {
+    & svg.see-you-soon {
+      width: 100vw;
+      margin: -20vh auto;
+      height: 100vh;
+    }
+
+    & .text {
+      top: 0px;
+      left: 5vw;
+      width: 90vw;
+
+      & h1 {
+        font-size: 2.5rem;
+      }
+
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  #see-you-soon {
+    flex-direction: row;
+    margin-top: 250px;
+  
+    & svg.see-you-soon {
+      width: 100vw;
+      margin: -25vh auto;
+      height: 100vh;
+    }
+  
+    & .text {
+      top: 0px;
+      left: 5vw;
+
+      & h1 {
+        font-size: 2.5rem;
+      }
+
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  svg#whole-mouse {
+    display: none;
+  }
+  svg#whole-hand {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .learn-more {
+    margin-bottom: 60px;
+  }
+  svg#whole-mouse {
+    display: inline-block;
+  }
+
+  svg#whole-hand {
+    display: none;
+  }
+}

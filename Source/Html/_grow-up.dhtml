@@ -1,0 +1,24 @@
+<section id="grow-up">
+  <!--@ include Svg/stats-chalkboard-svg @-->
+  <div class="description">
+    <div class="text-wrapper">
+      <h1 class="noselect">Wypromuj swój instagramowy profil!</h1>
+      <p class="noselect">Oferujemy usługi promowania profili, które umożliwiają zbudowanie grona realnych fanów.</p>
+    </div>
+    <div class="numbers-wrapper">
+      <div class="likes-wrapper">
+        <div class="likes red">
+          <h1 class="noselect" id="likes-count"></h1>
+        </div>
+        <p class="noselect">polubienia</p>
+      </div>
+      <div class="follows-wrapper">
+        <div class="follows blue">
+          <h1 class="noselect" id="followers"></h1>
+        </div>
+        <p class="noselect">obserwujący</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="./assets/js/likesandfollowers.js"></script>

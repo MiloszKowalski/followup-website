@@ -1,0 +1,35 @@
+<nav class="top-menu-standard-dashboard">
+  <div>
+    <div class="menu-logo">
+      <a href>
+        <!--@ include Svg/followup-logo-svg @-->
+      </a>
+    </div>
+
+    <div class="menu-icon">
+      <a id="expand-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
+    </div>
+
+    <ul>
+      <li>
+        <a href="https://serene-mestorf-3df7dd.netlify.com/">STRONA GŁÓWNA</a>
+      </li>
+      <li>
+        <a href="https://serene-mestorf-3df7dd.netlify.com/cennik.html">CENNIK</a>
+      </li>
+      <li>
+        <a href>KONTAKT</a>
+      </li>
+      <li>
+        <a href="https://followup-dashboard.netlify.com/#/">LOGOWANIE</a>
+      </li>
+      <li>
+        <a href="https://followup-dashboard.netlify.com/#/">REJESTRACJA</a>
+      </li>
+    </ul>
+  </div>
+</nav>

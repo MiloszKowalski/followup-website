@@ -1,0 +1,47 @@
+@import './_topmenu.scss';
+@import './_see-you-soon.scss';
+@import './_grow-up.scss';
+@import './_prices.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2A2A2A;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+section {
+  margin-top: 100px;
+}
+
+footer {
+  display: block;
+  background-color: #212121;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  margin-top: 300px;
+  position: relative;
+  max-height: 200px;
+
+  & svg {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 30px auto;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.noselect {
+  user-select: none;
+}

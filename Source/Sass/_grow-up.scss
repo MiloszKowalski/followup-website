@@ -1,0 +1,376 @@
+// ##############################
+// #### GROW UP YOUR PROFILE ####
+// ##############################
+
+@keyframes grow-stat {
+  from {
+    transform: translateY(0px) translateX(0px);
+  }
+  to {
+    transform: translateY(-250px) translateX(450px);
+  }
+}
+
+@keyframes push-button {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes mask-anim {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+section#grow-up {
+  margin-top: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .description {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .text-wrapper {
+      text-align: center;
+      padding: 5vw;
+    }
+
+    .numbers-wrapper {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-evenly;
+
+      .likes-wrapper, .follows-wrapper {
+        display: inline-block;
+        width: 40vw;
+        text-align: center;
+
+        .likes, .follows {
+          padding: 5px;
+          border-radius: 10px;
+          position: relative;
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            margin-top: -5px;
+            left: 50%;
+            margin-left: -20px;
+          }
+    
+          & h1 {
+            margin: 10px 0;
+          }
+        }
+
+        .red {
+          background-color: #fd1d1d;
+    
+          &::after {
+            border-top: 20px solid #fd1d1d;
+          }
+        }
+    
+        .blue {
+          background-color: #3897f0;
+    
+          &::after {
+            border-top: 20px solid #3897f0;
+          }
+        }
+
+      }
+    }
+  }
+
+
+  svg {
+    width: 140vw;
+    height: 50vh;
+    margin-left: -50vw;
+
+    .cls-1 {
+      fill: url(#Gradient_bez_nazwy_23);
+    }
+
+    .cls-2 {
+      fill: #fff;
+    }
+
+    .cls-3 {
+      fill: lime;
+    }
+
+    .cls-4, .cls-6 {
+      fill: none;
+      stroke: #999;
+      stroke-miterlimit: 10;
+    }
+
+    .cls-4 {
+      stroke-width: 0.2877px;
+    }
+
+    .cls-5 {
+      fill: url(#Gradient_bez_nazwy_17);
+    }
+
+    .cls-6 {
+      stroke-linecap: round;
+      stroke-width: 1.4384px;
+    }
+
+    .cls-7 {
+      fill: #fd1d1d;
+    }
+
+    .cls-8 {
+      fill: #c91d1d;
+    }
+
+    .cls-9 {
+      fill: #3897f0;
+    }
+
+    .cls-10 {
+      fill: #2f5dc7;
+    }
+
+    path#stat-mask.scrolled {
+      animation: grow-stat 2s 0.25s forwards;
+    }
+    
+    path#follow-mask {
+
+      &.clicked {
+        animation: mask-anim 0.2s 1 both;
+      }
+
+      &.scrolled {
+        animation: mask-anim 0.2s 13 both;
+      }
+    }
+
+    path#like-mask {
+      &.clicked {
+        animation: mask-anim 0.18s 1 both;
+      }
+
+      &.scrolled {
+        animation: mask-anim 0.18s 11 both;
+      }
+    }
+
+    g#follow {
+
+      &.clicked {
+        animation: push-button 0.2s 1 both;
+      }
+
+      &.scrolled {
+        animation: push-button 0.2s 11 both;
+      }
+    }
+
+    g#like {
+      &.clicked {
+        animation: push-button 0.18s 1 both;
+      }
+
+      &.scrolled {
+        animation: push-button 0.18s 13 both;
+      }
+    }
+
+    #follow, #like {
+      cursor: pointer;
+    }
+
+  }
+  }
+
+@media (max-width: 900px) and (orientation: landscape) {
+  section#grow-up {
+    margin-top: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+  
+      .text-wrapper {
+        text-align: center;
+        padding: 5vw;
+      }
+  
+      .numbers-wrapper {
+        margin-top: -20px;
+        display: flex;
+        justify-content: space-evenly;
+  
+        .likes-wrapper, .follows-wrapper {
+          display: inline-block;
+          width: 40%;
+          text-align: center;
+  
+          .likes, .follows {
+            padding: 5px;
+            border-radius: 10px;
+            position: relative;
+      
+            & h1 {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      margin-left: -20vw;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  section#grow-up {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+  
+    .description {
+      .text-wrapper {
+        text-align: center;
+        padding: 5vw;
+        margin-top: -60px;
+
+        & h1 {
+          font-size: 2.5rem;
+        }
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .numbers-wrapper {
+        margin-top: -20px;
+        display: flex;
+        justify-content: space-evenly;
+  
+        .likes-wrapper, .follows-wrapper {
+          display: inline-block;
+          width: 40%;
+          text-align: center;
+  
+          .likes, .follows {
+            padding: 5px;
+            border-radius: 10px;
+            position: relative;
+      
+            & h1 {
+              margin: 10px 0;
+              font-size: 2.5rem;
+            }
+          }
+
+          & p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      margin-left: -30vw;
+      margin-bottom: -100px;
+    }
+  }
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+  section#grow-up {
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20vh;
+  
+    .description {
+      flex-direction: column;
+      .text-wrapper {
+        text-align: center;
+        padding: 5vw;
+        margin-top: -60px;
+
+        & h1 {
+          font-size: 2.5rem;
+        }
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .numbers-wrapper {
+        margin-top: -20px;
+        display: flex;
+        justify-content: space-evenly;
+  
+        .likes-wrapper, .follows-wrapper {
+          display: inline-block;
+          width: 40%;
+          text-align: center;
+  
+          .likes, .follows {
+            padding: 5px;
+            border-radius: 10px;
+            position: relative;
+      
+            & h1 {
+              margin: 10px 0;
+              font-size: 2.5rem;
+            }
+          }
+
+          & p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    svg {
+      width: 100vw;
+      height: 90vh;
+      margin-left: -20vw;
+      margin-top: 30px;
+    }
+  }
+}
