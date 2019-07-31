@@ -54,7 +54,9 @@
   }
 
   &:hover {
-    transform: translateY(-15px);
+    @media (min-width: 1280px) {
+      transform: translateY(-15px) scale(1.06);
+    }
   }
 
   .offer-header {
