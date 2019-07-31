@@ -14,5 +14,6 @@
     <script src="./Assets/Js/dna.delay.js"></script>
     <script src="./Assets/Js/dna.delay.js"></script>
     <script src="./Assets/Js/topmenu.js"></script>
+    <script defer src="./assets/js/likesandfollowers.js"></script>
 </head>
 <body>
