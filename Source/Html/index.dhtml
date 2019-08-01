@@ -3,8 +3,10 @@
   <div class="wrapper">
     <!--@ include see-you-soon @-->
     <!--@ include grow-up @-->
-    <!-- include try-for-free @-->
+    <!--@ include automate-your-flow @-->
     <!--@ include key-to-success @-->
+    <!--@ include save-your-time @-->
+    <!--@ include try-for-free @-->
       <footer>
         Copyright FollowUP &copy;2019. Wszystkie prawa zastrzeżone.
         <!--@ include Svg/followup-logo-svg @-->

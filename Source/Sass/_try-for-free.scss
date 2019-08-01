@@ -1,12 +1,6 @@
 #try-for-free {
   display: flex;
-  flex-direction: column-reverse;
-
-  & svg.try-for-free {
-    width: 80vw;
-    margin: -3vh auto;
-    height: 35vh;
-  }
+  flex-direction: column;
 
   & .text {
     text-align: center;
@@ -22,18 +16,44 @@
       font-size: 1rem;
     }
   }
+
+  a {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  button {
+    background: linear-gradient(
+      135deg,
+      rgb(54, 112, 206) 0%,
+      rgb(86, 204, 192) 100%
+    );
+    border: none;
+    color: #fff;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    background-size: 300% 100%;
+    background-position: 0% 100%;
+    -moz-transition: background-position 0.4s ease-in-out;
+    -o-transition: background-position 0.4s ease-in-out;
+    -webkit-transition: background-position 0.4s ease-in-out;
+    transition: background-position 0.4s ease-in-out;
+
+    &:hover {
+      background-position: 100% 0;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
   #try-for-free {
-    flex-direction: row;
-  
-    & svg.try-for-free {
-      width: 100vw;
-      margin: -25vh auto;
-      height: 100vh;
-    }
-  
+
     & .text {
       top: 0px;
     }
@@ -42,11 +62,6 @@
 
 @media (min-width: 768px) {
   #try-for-free {
-    & svg.try-for-free {
-      width: 100vw;
-      margin: -20vh auto;
-      height: 100vh;
-    }
 
     & .text {
       top: 0px;
@@ -66,14 +81,7 @@
 
 @media (min-width: 768px) and (orientation: landscape) {
   #try-for-free {
-    flex-direction: row;
     margin-top: 250px;
-  
-    & svg.try-for-free {
-      width: 100vw;
-      margin: -25vh auto;
-      height: 100vh;
-    }
   
     & .text {
       top: 0px;

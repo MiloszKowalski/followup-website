@@ -2,8 +2,10 @@
 @import './_see-you-soon.scss';
 @import './_grow-up.scss';
 @import './_prices.scss';
-@import './_try-for-free.scss';
+@import './_automate-your-flow.scss';
 @import './_key-to-success.scss';
+@import './_save-your-time.scss';
+@import './_try-for-free.scss';
 
 * {
   box-sizing: border-box;
@@ -15,6 +17,10 @@ body {
   background-color: #2A2A2A;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+svg {
+  shape-rendering: geometricPrecision;
 }
 
 section {
