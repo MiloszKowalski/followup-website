@@ -23,6 +23,29 @@ svg {
   shape-rendering: geometricPrecision;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.will-fade-in {
+  opacity: 0;
+}
+
+.fade-in > * {
+  animation: fade-in 0.5s 0.15s 1 both;
+}
+
+.fade-in > svg {
+  animation: fade-in 0.5s 1 both;
+}
+
 section {
   margin-top: 100px;
 }

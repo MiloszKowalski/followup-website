@@ -79,6 +79,19 @@
       height: 60vh;
       position: relative;
       right: 4vw;
+
+      @keyframes piggy-coin {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+      
+      & g#piggy-coin {
+        animation: piggy-coin 2s infinite;
+      }
     }
   
     & .text {

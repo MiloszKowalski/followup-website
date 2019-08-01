@@ -1,4 +1,4 @@
-<svg class="see-you-soon" viewBox="0 0 500 500">
+<svg data-delay="1" data-delay-add="fade-in-delayed" class="see-you-soon will-fade-in" viewBox="0 0 500 500">
   <style>
     .st0{enable-background:new}.st3{fill:#bbb}.st10{fill:#f9f9f9}.st14{fill:#b3b3b3}.st16{fill:#ccc}.st23{fill:#666}.st24{fill:none;stroke:#fff;stroke-width:.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st25{fill:#c69c6d}
   </style>

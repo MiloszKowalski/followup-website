@@ -7,13 +7,14 @@
     <title>FollowUP - wespnij się na wyżyny Social Media!</title>
     <link rel="stylesheet" href="./Assets/Css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <script src="./Assets/Js/dna.core.js"></script>
-    <script src="./Assets/Js/dna.scroll.core.js"></script>
-    <script src="./Assets/Js/dna.scroll.animatein.js"></script>
-    <script src="./Assets/Js/dna.scroll.scrolldown.js"></script>
-    <script src="./Assets/Js/dna.delay.js"></script>
-    <script src="./Assets/Js/dna.delay.js"></script>
-    <script src="./Assets/Js/topmenu.js"></script>
+    <script defer src="./Assets/Js/dna.core.js"></script>
+    <script defer src="./Assets/Js/dna.scroll.core.js"></script>
+    <script defer src="./Assets/Js/dna.scroll.scrolldown.js"></script>
+    <script defer src="./Assets/Js/dna.delay.js"></script>
+    <script defer src="./Assets/Js/dna.delay.js"></script>
+    <script defer src="./Assets/Js/topmenu.js"></script>
     <script defer src="./assets/js/likesandfollowers.js"></script>
+    <script defer src="./assets/js/animatein.js"></script>
+    <script defer src="./Assets/Js/dna.scroll.animatein.js"></script>
 </head>
 <body>
