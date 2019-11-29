@@ -2,8 +2,22 @@ OnLoad(() => {
   // Get menu button and menu list
   var menuButton = document.getElementById('expand-icon');
   var menuList = document.querySelector('ul');
+  var menuLinks = document.querySelectorAll('.topmenu-link');
   var isMenuOpen;
 
+  menuLinks.forEach((link) =>{
+    link.addEventListener('click', () => {
+      if(!isMenuOpen) {
+        menuButton.classList.add('open');
+        menuList.classList.add('expanded');
+        isMenuOpen = true;
+      } else {
+        menuButton.classList.remove('open');
+        menuList.classList.remove('expanded');
+        isMenuOpen = false;
+      }
+    });
+  })
 
   // Add click event to open menu
   menuButton.addEventListener('click', () => {

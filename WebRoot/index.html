@@ -13,7 +13,6 @@
     <script defer src="./Assets/Js/dna.delay.js"></script>
     <script defer src="./Assets/Js/dna.delay.js"></script>
     <script defer src="./Assets/Js/topmenu.js"></script>
-    <script defer src="./assets/js/likesandfollowers.js"></script>
     <script defer src="./assets/js/animatein.js"></script>
     <script defer src="./Assets/Js/dna.scroll.animatein.js"></script>
 </head>
@@ -21,7 +20,7 @@
   <nav class="top-menu-standard-dashboard">
   <div>
     <div class="menu-logo">
-      <a href>
+      <a href="/">
         <svg
   id="topmenu-svg"
   version="1.1"
@@ -134,14 +133,16 @@
         <a href="/cennik">CENNIK</a>
       </li>
       <li>
-        <a href>KONTAKT</a>
+        <a href="/#contact" class="topmenu-link">KONTAKT</a>
       </li>
-      <li>
-        <a href="https://followup-dashboard.netlify.com/#/">LOGOWANIE</a>
-      </li>
-      <li>
-        <a href="https://followup-dashboard.netlify.com/#/">REJESTRACJA</a>
-      </li>
+      <!--
+        <li>
+          <a href="https://followup-dashboard.netlify.com/#/">LOGOWANIE</a>
+        </li>
+        <li>
+          <a href="https://followup-dashboard.netlify.com/#/">REJESTRACJA</a>
+        </li>
+      -->
     </ul>
   </div>
 </nav>
@@ -405,6 +406,7 @@
       </div>
     </div>
   </div>
+  <script defer src="./assets/js/likesandfollowers.js"></script>
 </section>
     <section id="automate-your-flow">
   <div class="text">
@@ -919,6 +921,43 @@
     <p>Możesz wypróbować nasze usługi przez <b>5 dni</b> bez ponoszenia <b>żadnych</b> kosztów i przekonać się, jak ułatwi Twoją pracę!</p>
   </div>
   <a href="/cennik"><button>WYPRÓBUJ</button></a>
+</section>
+    <section id="contact">
+    <h1>Kontakt</h1>
+    <div class="text">
+        <p><b>Telefon:</b></p>
+        <p>Konsultant: (+48) 795070502</p>
+        <p>Dział techniczny: (+48) 500067012</p>
+        <p><b>E-mail:</b></p>  
+        <p>biuro@followup.social</p>
+    </div>
+    <h1>Masz pytanie?</h1>
+    <p>Możesz je zadać w formularzu poniżej!</p>
+    <p class="faded">odpowiemy ;)</p>
+    <form id="contact-form" method="post" data-netlify="true">
+        <fieldset>
+            <p class="faded label">Imię</p>
+            <input placeholder="Twoje imię" name="name" type="text" tabindex="1" maxlength="40">
+        </fieldset>
+        <fieldset>
+            <p class="faded label">E-mail</p>
+            <input placeholder="Twój adres e-mail" name="email" type="email" tabindex="2" maxlength="40" required>
+        </fieldset>
+        <fieldset>
+            <p class="faded label">Numer telefonu</p>
+            <input placeholder="Numer Twojego telefonu" name="phone" type="tel" tabindex="3" maxlength="12">
+        </fieldset>
+        <fieldset>
+            <p class="faded label">Treść pytania</p>
+            <textarea placeholder="Treść twojego pytania..." name="content" tabindex="4" maxlength="550" required></textarea>
+        </fieldset>
+        <fieldset>
+            <div class="recaptcha" data-netlify-recaptcha="true"></div class="recaptcha">
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" spellcheck="true" data-submit="Wysyłanie...">Wyślij</button>
+        </fieldset>
+    </form>
 </section>
       <footer>
         Copyright FollowUP &copy;2019. Wszystkie prawa zastrzeżone.

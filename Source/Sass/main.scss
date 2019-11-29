@@ -6,9 +6,11 @@
 @import './_key-to-success.scss';
 @import './_save-your-time.scss';
 @import './_try-for-free.scss';
+@import './_contact.scss';
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,7 +58,7 @@ footer {
   text-align: center;
   margin: 0;
   padding: 20px;
-  margin-top: 300px;
+  margin-top: 250px;
   position: relative;
   max-height: 200px;
 

@@ -1,7 +1,7 @@
 <nav class="top-menu-standard-dashboard">
   <div>
     <div class="menu-logo">
-      <a href>
+      <a href="/">
         <!--@ include Svg/followup-logo-svg @-->
       </a>
     </div>
@@ -22,14 +22,16 @@
         <a href="/cennik">CENNIK</a>
       </li>
       <li>
-        <a href>KONTAKT</a>
+        <a href="/#contact" class="topmenu-link">KONTAKT</a>
       </li>
-      <li>
-        <a href="https://followup-dashboard.netlify.com/#/">LOGOWANIE</a>
-      </li>
-      <li>
-        <a href="https://followup-dashboard.netlify.com/#/">REJESTRACJA</a>
-      </li>
+      <!--
+        <li>
+          <a href="https://followup-dashboard.netlify.com/#/">LOGOWANIE</a>
+        </li>
+        <li>
+          <a href="https://followup-dashboard.netlify.com/#/">REJESTRACJA</a>
+        </li>
+      -->
     </ul>
   </div>
 </nav>

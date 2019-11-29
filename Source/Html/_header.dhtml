@@ -13,7 +13,6 @@
     <script defer src="./Assets/Js/dna.delay.js"></script>
     <script defer src="./Assets/Js/dna.delay.js"></script>
     <script defer src="./Assets/Js/topmenu.js"></script>
-    <script defer src="./assets/js/likesandfollowers.js"></script>
     <script defer src="./assets/js/animatein.js"></script>
     <script defer src="./Assets/Js/dna.scroll.animatein.js"></script>
 </head>

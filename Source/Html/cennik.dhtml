@@ -1,7 +1,7 @@
 <!--@ include header @-->
   <!--@ include topmenu @-->
   <div class="prices-wrapper">
-        <h1 class="prices-header">CENNIK NASZYCH USŁUG</h1>
+        <h1 class="prices-header">NASZE USŁUGI</h1>
         <div class="offer-wrapper">
           <div class="offer">
             <div class="offer-header"><h2>PROMOWANIE FOLLOWUP STANDARD</h2></div>
@@ -101,7 +101,6 @@
           Copyright FollowUP &copy;2019. Wszystkie prawa zastrzeżone.
           <!--@ include Svg/followup-logo-svg @-->
         </footer>
-        <script src="./assets/js/index.js"></script>
     </div>
   <!--@ include footer @-->
   
