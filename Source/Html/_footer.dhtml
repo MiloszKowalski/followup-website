@@ -1,2 +1,7 @@
+    <footer>
+      Copyright FollowUP &copy;2020. Wszystkie prawa zastrzeżone.
+      <!--@ include Svg/followup-logo-svg @-->
+    </footer>
+    </div>
   </body>
 </html>
