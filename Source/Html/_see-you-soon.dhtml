@@ -1,7 +1,7 @@
 <section data-delay="1" data-delay-add="fade-in" id="see-you-soon">
   <div data-delay="1" data-delay-add="fade-in" class="text will-fade-in">
-    <h1>Widzimy się wkrótce!</h1>
-    <p>Serwis FollowUP jest w trakcie budowy. Już niedługo jego potencjał zostanie przekazany w Wasze ręce ;)</p>
+    <h1>Wespnij się z nami na Wyżyny Twojego Biznesu!</h1>
+    <p>Agencja FollowUP pomoże Ci w przyprowadzeniu klientów pod drzwi Twojego salonu oraz zadba o marketing w Twojej firmie.</p>
   </div>
   <!--@ include Svg/followup-3d-svg @-->
   <div data-delay="1" data-delay-add="fade-in" data-scroll-into-view="mouse-hidden" data-scroll-into-view-unload class="learn-more will-fade-in">

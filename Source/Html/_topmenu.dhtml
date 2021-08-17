@@ -18,9 +18,9 @@
       <li>
         <a href="/">STRONA GŁÓWNA</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="/cennik">CENNIK</a>
-      </li>
+      </li> -->
       <li>
         <a href="/#contact" class="topmenu-link">KONTAKT</a>
       </li>
