@@ -1,7 +1,12 @@
 <section data-delay="1" data-delay-add="fade-in" id="see-you-soon">
   <div data-delay="1" data-delay-add="fade-in" class="text will-fade-in">
-    <h1>Wespnij się z nami na Wyżyny Twojego Biznesu!</h1>
-    <p>Agencja FollowUP pomoże Ci w przyprowadzeniu klientów pod drzwi Twojego salonu oraz zadba o marketing w Twojej firmie.</p>
+    <h1>FollowUP Agencja Adrian Szerszeń</h1>
+    <p>Turza Mała 42C<br/>
+      06-545 Lipowiec Kościelny<br/>
+      Numer Identyfikacji Podatkowej: 5691901641<br/>
+      REGON: 520223223<br/>
+      Numer telefonu: 795070502<br/>
+      Adres e-mail: adrianbizes@gmail.com</p>
   </div>
   <!--@ include Svg/followup-3d-svg @-->
   <div data-delay="1" data-delay-add="fade-in" data-scroll-into-view="mouse-hidden" data-scroll-into-view-unload class="learn-more will-fade-in">

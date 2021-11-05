@@ -13,17 +13,18 @@
   }
 
   & .text {
-    text-align: center;
+    text-align: left;
     padding: 0 5%;
     position: relative;
     top: -30px;
-    
+
     & h1 {
       font-size: 1.8rem;
     }
 
     & p {
       font-size: 1rem;
+      line-height: 2;
     }
   }
 
@@ -127,13 +128,13 @@ svg#whole-hand {
 @media (max-width: 900px) and (orientation: landscape) {
   #see-you-soon {
     flex-direction: row;
-  
+
     & svg.see-you-soon {
       width: 100vw;
       margin: -25vh auto;
       height: 100vh;
     }
-  
+
     & .text {
       top: 0px;
     }
@@ -168,13 +169,13 @@ svg#whole-hand {
   #see-you-soon {
     flex-direction: row;
     margin-top: 250px;
-  
+
     & svg.see-you-soon {
       width: 100vw;
       margin: -25vh auto;
       height: 100vh;
     }
-  
+
     & .text {
       top: 0px;
       left: 5vw;
